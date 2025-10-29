@@ -9,7 +9,9 @@ import joblib
 # --------------------------------------------
 # Load trained model and scaler
 # --------------------------------------------
-model = joblib.load("best_heart_model_all_features.pkl")
+import os
+model = joblib.load(os.path.join(os.path.dirname(__file__), "best_heart_model_all_features.pkl"))
+
 scaler = joblib.load("scaler.pkl")
 
 # --------------------------------------------
@@ -83,3 +85,4 @@ if st.button("🔍 Predict"):
 # --------------------------------------------
 st.markdown("---")
 st.caption("Developed by [PRATHAM] — CSE (AIML) | ML Mini Project 2025")
+
