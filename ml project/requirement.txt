@@ -1,7 +1,10 @@
 streamlit
 scikit-learn
+pandas
+numpy
+matplotlib
+seaborn
 xgboost
 lightgbm
 joblib
-numpy
-pandas
+
